@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Passion+One&family=Sriracha&display=swap');
+/**
+    font-family: 'Passion One', cursive;
+
+    font-family: 'Sriracha', cursive;
+**/
+:root{
+    --font1: 'Passion One', cursive;
+    --font2: 'Sriracha', cursive;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+}
+html, body{
+    height: 100vh;
+    background-color: darkgray;
+}
+header{
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    font-family: var(--font1);
+}
+header h1{
+    /*
+    pode-se alterar o estado de um texto em um elemento com
+    text-transform:uppercase;
+    que deixa o texto do elemento em caixa alta, mas uma alternativa pode ser melhor 
+    font-variant: smallcaps;
+    */
+    padding-top: 50px;
+    font-variant: small-caps;
+    font-size: 3em;
+}
+header p{
+    padding-bottom: 50px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+header a, footer a{
+    text-decoration: none;
+    color: white;
+}
+header a:hover, footer a:hover{
+    text-decoration: underline white;
+}
+section{
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    padding-left: 40px;
+    font-family: var(--font2);
+    font-size: 2em;
+}
+p.double{
+    padding-bottom: 5vh;
+}
+section.normal{
+    background-color: white;
+}
+section.imagem{
+    background-color: rgba(44, 41, 41, 0.918);
+    color: white;
+    /*Para sombra interna usa-se inset*/
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.384);
+    background-attachment: fixed;
+}
+section.imagem p{
+    display:inline-block;
+    padding:5px;
+    background-color: rgba(24, 21, 21, 0.473);
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.479);
+}
+section#img001{
+    background-image: url(./imagens/background001.jpg);
+    background-position: center right;
+    background-size: cover;
+}
+section#img002{
+    background-image: url(./imagens/background002.jpg);
+    background-position: bottom right;
+    background-size: cover;
+}
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding:10px;
+}
